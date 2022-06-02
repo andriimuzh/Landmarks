@@ -11,6 +11,14 @@
 		EF400DA12848A32E00EF4892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400DA02848A32E00EF4892 /* ContentView.swift */; };
 		EF400DA32848A32F00EF4892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF400DA22848A32F00EF4892 /* Assets.xcassets */; };
 		EF400DA62848A32F00EF4892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF400DA52848A32F00EF4892 /* Preview Assets.xcassets */; };
+		EF424E102848CEFD00FB9F9E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E0F2848CEFD00FB9F9E /* CircleImage.swift */; };
+		EF424E122848D10F00FB9F9E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E112848D10F00FB9F9E /* MapView.swift */; };
+		EF424E162848D79E00FB9F9E /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E152848D79E00FB9F9E /* Landmark.swift */; };
+		EF424E182848D88E00FB9F9E /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = EF424E172848D88E00FB9F9E /* landmarkData.json */; };
+		EF424E332848DB1800FB9F9E /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E322848DB1800FB9F9E /* ModelData.swift */; };
+		EF424E352848DD6E00FB9F9E /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E342848DD6E00FB9F9E /* LandmarkRow.swift */; };
+		EF424E372848DF0E00FB9F9E /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E362848DF0E00FB9F9E /* LandmarkList.swift */; };
+		EF424E392848E0D500FB9F9E /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF424E382848E0D500FB9F9E /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		EF400DA02848A32E00EF4892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF400DA22848A32F00EF4892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF400DA52848A32F00EF4892 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF424E0F2848CEFD00FB9F9E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		EF424E112848D10F00FB9F9E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EF424E152848D79E00FB9F9E /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		EF424E172848D88E00FB9F9E /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		EF424E322848DB1800FB9F9E /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		EF424E342848DD6E00FB9F9E /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		EF424E362848DF0E00FB9F9E /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		EF424E382848E0D500FB9F9E /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,10 @@
 		EF400D9D2848A32E00EF4892 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				EF424E192848D8D600FB9F9E /* Resources */,
 				EF400D9E2848A32E00EF4892 /* LandmarksApp.swift */,
-				EF400DA02848A32E00EF4892 /* ContentView.swift */,
+				EF424E142848D77D00FB9F9E /* Model */,
+				EF424E132848D76100FB9F9E /* Views */,
 				EF400DA22848A32F00EF4892 /* Assets.xcassets */,
 				EF400DA42848A32F00EF4892 /* Preview Content */,
 			);
@@ -65,6 +83,36 @@
 				EF400DA52848A32F00EF4892 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF424E132848D76100FB9F9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF400DA02848A32E00EF4892 /* ContentView.swift */,
+				EF424E382848E0D500FB9F9E /* LandmarkDetail.swift */,
+				EF424E0F2848CEFD00FB9F9E /* CircleImage.swift */,
+				EF424E112848D10F00FB9F9E /* MapView.swift */,
+				EF424E342848DD6E00FB9F9E /* LandmarkRow.swift */,
+				EF424E362848DF0E00FB9F9E /* LandmarkList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF424E142848D77D00FB9F9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF424E152848D79E00FB9F9E /* Landmark.swift */,
+				EF424E322848DB1800FB9F9E /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF424E192848D8D600FB9F9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF424E172848D88E00FB9F9E /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,7 @@
 			files = (
 				EF400DA62848A32F00EF4892 /* Preview Assets.xcassets in Resources */,
 				EF400DA32848A32F00EF4892 /* Assets.xcassets in Resources */,
+				EF424E182848D88E00FB9F9E /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +187,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF400DA12848A32E00EF4892 /* ContentView.swift in Sources */,
+				EF424E162848D79E00FB9F9E /* Landmark.swift in Sources */,
+				EF424E122848D10F00FB9F9E /* MapView.swift in Sources */,
+				EF424E372848DF0E00FB9F9E /* LandmarkList.swift in Sources */,
+				EF424E392848E0D500FB9F9E /* LandmarkDetail.swift in Sources */,
 				EF400D9F2848A32E00EF4892 /* LandmarksApp.swift in Sources */,
+				EF424E102848CEFD00FB9F9E /* CircleImage.swift in Sources */,
+				EF424E352848DD6E00FB9F9E /* LandmarkRow.swift in Sources */,
+				EF424E332848DB1800FB9F9E /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
