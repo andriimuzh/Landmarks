@@ -35,7 +35,7 @@ struct HikeView: View {
                 Spacer()
                 
                 Button {
-                    withAnimation(.easeInOut(duration: 4)) {
+                    withAnimation(.easeInOut(duration: 1)) {
                         showDetail.toggle()
                     }
                 } label: {
@@ -45,6 +45,7 @@ struct HikeView: View {
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
                         .padding()
                         .scaleEffect(showDetail ? 1.5 : 1)
+                        .animation(.spring(), value: showDetail)
                 }
             }
             
